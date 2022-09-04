@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>My first three.js app</title>
+		<title>Jayraj Solanki</title>
 		<style>
 			body { margin: 0; }
 		</style>
@@ -21,12 +21,11 @@
 			const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 			const cube = new THREE.Mesh( geometry, material );
 			scene.add( cube );
-
-			camera.position.z = 5;
+            
+			camera.position.z = 3;
 
 			function animate() {
 				requestAnimationFrame( animate );
-                //yoo
 				cube.rotation.x += 0.01;
 				cube.rotation.y += 0.01;
 
@@ -35,5 +34,6 @@
 
 			animate();
 		</script>
+        
 	</body>
 </html>
